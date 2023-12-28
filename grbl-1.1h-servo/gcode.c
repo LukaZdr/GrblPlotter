@@ -458,15 +458,15 @@ uint8_t gc_execute_line(char *line)
       axis_1 = Y_AXIS;
       // axis_linear = Z_AXIS;
       break;
-    case PLANE_SELECT_ZX:
-      // axis_0 = Z_AXIS;
-      axis_1 = X_AXIS;
-      axis_linear = Y_AXIS;
-      break;
-    default: // case PLANE_SELECT_YZ:
-      axis_0 = Y_AXIS;
-      // axis_1 = Z_AXIS;
-      axis_linear = X_AXIS;
+    // case PLANE_SELECT_ZX:
+    //   axis_0 = Z_AXIS;
+    //   axis_1 = X_AXIS;
+    //   axis_linear = Y_AXIS;
+    //   break;
+    // default: // case PLANE_SELECT_YZ:
+    //   axis_0 = Y_AXIS;
+    //   axis_1 = Z_AXIS;
+    //   axis_linear = X_AXIS;
   }
 
   // [12. Set length units ]: N/A
@@ -832,7 +832,8 @@ uint8_t gc_execute_line(char *line)
   } else {
     bit_false(value_words,(bit(WORD_N)|bit(WORD_F)|bit(WORD_S)|bit(WORD_T))); // Remove single-meaning value words.
   }
-  if (axis_command) { bit_false(value_words,(bit(WORD_X)|bit(WORD_Y)|bit(WORD_Z))); } // Remove axis words.
+  // if (axis_command) { bit_false(value_words,(bit(WORD_X)|bit(WORD_Y)|bit(WORD_Z))); } // Remove axis words.
+  if (axis_command) { bit_false(value_words,(bit(WORD_X)|bit(WORD_Y))); } // Remove axis words.
   if (value_words) { FAIL(STATUS_GCODE_UNUSED_WORDS); } // [Unused words]
 
   /* -------------------------------------------------------------------------------------

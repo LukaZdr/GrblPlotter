@@ -56,7 +56,7 @@ const __flash settings_t defaults = {\
     .acceleration[Y_AXIS] = DEFAULT_Y_ACCELERATION,
     // .acceleration[Z_AXIS] = DEFAULT_Z_ACCELERATION,
     .max_travel[X_AXIS] = (-DEFAULT_X_MAX_TRAVEL),
-    .max_travel[Y_AXIS] = (-DEFAULT_Y_MAX_TRAVEL),
+    .max_travel[Y_AXIS] = (-DEFAULT_Y_MAX_TRAVEL)};
     // .max_travel[Z_AXIS] = (-DEFAULT_Z_MAX_TRAVEL)};
 
 
@@ -318,7 +318,8 @@ uint8_t get_step_pin_mask(uint8_t axis_idx)
 {
   if ( axis_idx == X_AXIS ) { return((1<<X_STEP_BIT)); }
   if ( axis_idx == Y_AXIS ) { return((1<<Y_STEP_BIT)); }
-  return((1<<Z_STEP_BIT));
+  // return((1<<Z_STEP_BIT));
+  return((1));
 }
 
 
@@ -327,7 +328,8 @@ uint8_t get_direction_pin_mask(uint8_t axis_idx)
 {
   if ( axis_idx == X_AXIS ) { return((1<<X_DIRECTION_BIT)); }
   if ( axis_idx == Y_AXIS ) { return((1<<Y_DIRECTION_BIT)); }
-  return((1<<Z_DIRECTION_BIT));
+  // return((1<<Z_DIRECTION_BIT));
+  return((1));
 }
 
 
@@ -336,5 +338,6 @@ uint8_t get_limit_pin_mask(uint8_t axis_idx)
 {
   if ( axis_idx == X_AXIS ) { return((1<<X_LIMIT_BIT)); }
   if ( axis_idx == Y_AXIS ) { return((1<<Y_LIMIT_BIT)); }
-  return((1<<Z_LIMIT_BIT));
+  // return((1<<Z_LIMIT_BIT));
+  return((1));
 }

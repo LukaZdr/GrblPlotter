@@ -31,16 +31,16 @@
   // Grbl generic default settings. Should work across different machines.
   #define DEFAULT_X_STEPS_PER_MM 250.0
   #define DEFAULT_Y_STEPS_PER_MM 250.0
-  #define DEFAULT_Z_STEPS_PER_MM 250.0
+  // #define DEFAULT_Z_STEPS_PER_MM 250.0
   #define DEFAULT_X_MAX_RATE 500.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 500.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
   #define DEFAULT_X_ACCELERATION (10.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (10.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (10.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (10.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 200.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 200.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 200.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 200.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 255.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -73,16 +73,16 @@
   #define MM_PER_REV (0.050*MM_PER_INCH) // 0.050 inch/rev leadscrew
   #define DEFAULT_X_STEPS_PER_MM (STEPS_PER_REV*MICROSTEPS/MM_PER_REV)
   #define DEFAULT_Y_STEPS_PER_MM (STEPS_PER_REV*MICROSTEPS/MM_PER_REV)
-  #define DEFAULT_Z_STEPS_PER_MM (STEPS_PER_REV*MICROSTEPS/MM_PER_REV)
+  // #define DEFAULT_Z_STEPS_PER_MM (STEPS_PER_REV*MICROSTEPS/MM_PER_REV)
   #define DEFAULT_X_MAX_RATE 635.0 // mm/min (25 ipm)
   #define DEFAULT_Y_MAX_RATE 635.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 635.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 635.0 // mm/min
   #define DEFAULT_X_ACCELERATION (50.0*60*60) // 50*60*60 mm/min^2 = 50 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (50.0*60*60) // 50*60*60 mm/min^2 = 50 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (50.0*60*60) // 50*60*60 mm/min^2 = 50 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (50.0*60*60) // 50*60*60 mm/min^2 = 50 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 225.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 125.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 170.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 170.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 2800.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -111,16 +111,16 @@
   // Description: Pocket NC FR4 CNC mill.
   #define DEFAULT_X_STEPS_PER_MM 800.0
   #define DEFAULT_Y_STEPS_PER_MM 800.0
-  #define DEFAULT_Z_STEPS_PER_MM 800.0
+  // #define DEFAULT_Z_STEPS_PER_MM 800.0
   #define DEFAULT_X_MAX_RATE 300.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 300.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 300.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 300.0 // mm/min
   #define DEFAULT_X_ACCELERATION (30.0*60*60) // 15*60*60 mm/min^2 = 15 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (30.0*60*60) // 15*60*60 mm/min^2 = 15 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (30.0*60*60) // 15*60*60 mm/min^2 = 15 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (30.0*60*60) // 15*60*60 mm/min^2 = 15 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 225.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 125.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 170.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 170.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 7000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -156,16 +156,16 @@
   #define MM_PER_REV_Z 1.250 // 1.25 mm/rev leadscrew
   #define DEFAULT_X_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
   #define DEFAULT_Y_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
-  #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
+  // #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
   #define DEFAULT_X_MAX_RATE 1000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 1000.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 1000.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 1000.0 // mm/min
   #define DEFAULT_X_ACCELERATION (15.0*60*60) // 15*60*60 mm/min^2 = 15 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (15.0*60*60) // 15*60*60 mm/min^2 = 15 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (15.0*60*60) // 15*60*60 mm/min^2 = 15 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (15.0*60*60) // 15*60*60 mm/min^2 = 15 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 200.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 200.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 200.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 200.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 10000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -201,16 +201,16 @@
   #define MM_PER_REV_Z 1.250 // 1.25 mm/rev leadscrew
   #define DEFAULT_X_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
   #define DEFAULT_Y_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
-  #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
+  // #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
   #define DEFAULT_X_MAX_RATE 5000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 5000.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
   #define DEFAULT_X_ACCELERATION (250.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (250.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (50.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (50.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 290.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 290.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 100.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 100.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 10000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -245,16 +245,16 @@
   #define MM_PER_REV_Z (2.0*20) // 2mm belt pitch, 20 pulley teeth
   #define DEFAULT_X_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
   #define DEFAULT_Y_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
-  #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
+  // #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
   #define DEFAULT_X_MAX_RATE 5000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 5000.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 5000.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 5000.0 // mm/min
   #define DEFAULT_X_ACCELERATION (400.0*60*60) // 400*60*60 mm/min^2 = 400 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (400.0*60*60) // 400*60*60 mm/min^2 = 400 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (400.0*60*60) // 400*60*60 mm/min^2 = 400 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (400.0*60*60) // 400*60*60 mm/min^2 = 400 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 425.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 465.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 80.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 80.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 10000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -290,16 +290,16 @@
   #define MM_PER_REV_Z 2.117 // ACME 3/8-12 Leadscrew
   #define DEFAULT_X_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
   #define DEFAULT_Y_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
-  #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
+  // #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
   #define DEFAULT_X_MAX_RATE 8000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 8000.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
   #define DEFAULT_X_ACCELERATION (500.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (500.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (50.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (50.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 290.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 290.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 100.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 100.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 10000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -335,16 +335,16 @@
   #define MM_PER_REV_Z 2.117 // ACME 3/8-12 Leadscrew
   #define DEFAULT_X_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
   #define DEFAULT_Y_STEPS_PER_MM (MICROSTEPS_XY*STEP_REVS_XY/MM_PER_REV_XY)
-  #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
+  // #define DEFAULT_Z_STEPS_PER_MM (MICROSTEPS_Z*STEP_REVS_Z/MM_PER_REV_Z)
   #define DEFAULT_X_MAX_RATE 8000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 8000.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
   #define DEFAULT_X_ACCELERATION (500.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (500.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (50.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (50.0*60*60) // 25*60*60 mm/min^2 = 25 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 740.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 790.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 100.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 100.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 10000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -374,16 +374,16 @@
   // https://www.bobscnc.com/products/e3-cnc-engraving-kit
   #define DEFAULT_X_STEPS_PER_MM 80.0
   #define DEFAULT_Y_STEPS_PER_MM 80.0
-  #define DEFAULT_Z_STEPS_PER_MM 2267.717
+  // #define DEFAULT_Z_STEPS_PER_MM 2267.717
   #define DEFAULT_X_MAX_RATE 10000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 10000.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
   #define DEFAULT_X_ACCELERATION (500.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (500.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (300.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (300.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 450.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 390.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 85.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 85.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 1000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 5
@@ -413,16 +413,16 @@
   // https://www.bobscnc.com/products/e4-cnc-router
   #define DEFAULT_X_STEPS_PER_MM 80.0
   #define DEFAULT_Y_STEPS_PER_MM 80.0
-  #define DEFAULT_Z_STEPS_PER_MM 2267.717
+  // #define DEFAULT_Z_STEPS_PER_MM 2267.717
   #define DEFAULT_X_MAX_RATE 10000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 10000.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
   #define DEFAULT_X_ACCELERATION (500.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (500.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (300.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (300.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 610.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 610.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 85.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 85.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 1000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 5
@@ -456,16 +456,16 @@
   #define MM_PER_REV 8.0 // 8 mm/rev leadscrew
   #define DEFAULT_X_STEPS_PER_MM (STEPS_PER_REV*MICROSTEPS/MM_PER_REV)
   #define DEFAULT_Y_STEPS_PER_MM (STEPS_PER_REV*MICROSTEPS/MM_PER_REV)
-  #define DEFAULT_Z_STEPS_PER_MM (STEPS_PER_REV*MICROSTEPS/MM_PER_REV)
+  // #define DEFAULT_Z_STEPS_PER_MM (STEPS_PER_REV*MICROSTEPS/MM_PER_REV)
   #define DEFAULT_X_MAX_RATE 6000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 6000.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 6000.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 6000.0 // mm/min
   #define DEFAULT_X_ACCELERATION (600.0*60*60) // 600*60*60 mm/min^2 = 600 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (600.0*60*60) // 600*60*60 mm/min^2 = 600 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (600.0*60*60) // 600*60*60 mm/min^2 = 600 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (600.0*60*60) // 600*60*60 mm/min^2 = 600 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 190.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 180.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 150.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 150.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 10000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -495,16 +495,16 @@
   // http://www.openbuilds.com/builds/openbuilds-ox-cnc-machine.341/
   #define DEFAULT_X_STEPS_PER_MM 26.670
   #define DEFAULT_Y_STEPS_PER_MM 26.670
-  #define DEFAULT_Z_STEPS_PER_MM 50
+  // #define DEFAULT_Z_STEPS_PER_MM 50
   #define DEFAULT_X_MAX_RATE 500.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 500.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 500.0 // mm/min
   #define DEFAULT_X_ACCELERATION (10.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (10.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (10.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (10.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 500.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 750.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 80.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 80.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 1000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -534,16 +534,16 @@
   // Grbl generic default settings. Should work across different machines.
   #define DEFAULT_X_STEPS_PER_MM 1000.0
   #define DEFAULT_Y_STEPS_PER_MM 1000.0
-  #define DEFAULT_Z_STEPS_PER_MM 1000.0
+  // #define DEFAULT_Z_STEPS_PER_MM 1000.0
   #define DEFAULT_X_MAX_RATE 1000.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 1000.0 // mm/min
-  #define DEFAULT_Z_MAX_RATE 1000.0 // mm/min
+  // #define DEFAULT_Z_MAX_RATE 1000.0 // mm/min
   #define DEFAULT_X_ACCELERATION (100.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_Y_ACCELERATION (100.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (100.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
+  // #define DEFAULT_Z_ACCELERATION (100.0*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 1000.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 1000.0 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 1000.0 // mm NOTE: Must be a positive value.
+  // #define DEFAULT_Z_MAX_TRAVEL 1000.0 // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 1000.0 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0 // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10

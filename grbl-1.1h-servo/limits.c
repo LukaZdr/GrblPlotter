@@ -88,7 +88,8 @@ uint8_t limits_get_state()
       if (pin & get_limit_pin_mask(idx)) { limit_state |= (1 << idx); }
     }
     #ifdef ENABLE_DUAL_AXIS
-      if (pin & (1<<DUAL_LIMIT_BIT)) { limit_state |= (1 << N_AXIS); }
+      // if (pin & (1<<DUAL_LIMIT_BIT)) { limit_state |= (1 << N_AXIS); }
+      if (pin) { limit_state |= (1 << N_AXIS); }
     #endif
   }
   return(limit_state);

@@ -78,8 +78,8 @@
 
 // Modal Group G2: Plane select
 #define PLANE_SELECT_XY 0 // G17 (Default: Must be zero)
-#define PLANE_SELECT_ZX 1 // G18 (Do not alter value)
-#define PLANE_SELECT_YZ 2 // G19 (Do not alter value)
+// #define PLANE_SELECT_ZX 1 // G18 (Do not alter value)
+// #define PLANE_SELECT_YZ 2 // G19 (Do not alter value)
 
 // Modal Group G3: Distance mode
 #define DISTANCE_MODE_ABSOLUTE 0 // G90 (Default: Must be zero)
@@ -148,7 +148,7 @@
 #define WORD_T  9
 #define WORD_X  10
 #define WORD_Y  11
-#define WORD_Z  12
+// #define WORD_Z  12
 
 // Define g-code parser position updating flags
 #define GC_UPDATE_POS_TARGET   0 // Must be zero

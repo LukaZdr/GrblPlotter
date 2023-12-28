@@ -99,8 +99,9 @@ static segment_t segment_buffer[SEGMENT_BUFFER_SIZE];
 typedef struct {
   // Used by the bresenham line algorithm
   uint32_t counter_x,        // Counter variables for the bresenham line tracer
-           counter_y,
-           counter_z;
+           counter_y;
+          //  counter_y,
+          //  counter_z;
   #ifdef STEP_PULSE_DELAY
     uint8_t step_bits;  // Stores out_bits output to complete the step pulse delay
   #endif
@@ -370,7 +371,8 @@ ISR(TIMER1_COMPA_vect)
         st.exec_block = &st_block_buffer[st.exec_block_index];
 
         // Initialize Bresenham line and distance counters
-        st.counter_x = st.counter_y = st.counter_z = (st.exec_block->step_event_count >> 1);
+        // st.counter_x = st.counter_y = st.counter_z = (st.exec_block->step_event_count >> 1);
+        st.counter_x = st.counter_y = (st.exec_block->step_event_count >> 1);
       }
       st.dir_outbits = st.exec_block->direction_bits ^ dir_port_invert_mask;
       #ifdef ENABLE_DUAL_AXIS
@@ -450,7 +452,7 @@ ISR(TIMER1_COMPA_vect)
     // st.counter_z -= st.exec_block->step_event_count;
     // if (st.exec_block->direction_bits & (1<<Z_DIRECTION_BIT)) { sys_position[Z_AXIS]--; }
     // else { sys_position[Z_AXIS]++; }
-  }
+  // }
 
   // During a homing cycle, lock out and prevent desired axes from moving.
   if (sys.state == STATE_HOMING) { 

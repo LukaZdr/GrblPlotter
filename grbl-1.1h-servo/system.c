@@ -187,7 +187,7 @@ uint8_t system_execute_line(char *line)
               switch (line[2]) {
                 case 'X': mc_homing_cycle(HOMING_CYCLE_X); break;
                 case 'Y': mc_homing_cycle(HOMING_CYCLE_Y); break;
-                case 'Z': mc_homing_cycle(HOMING_CYCLE_Z); break;
+                // case 'Z': mc_homing_cycle(HOMING_CYCLE_Z); break;
                 default: return(STATUS_INVALID_STATEMENT);
               }
           #endif
