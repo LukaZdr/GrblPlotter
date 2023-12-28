@@ -310,7 +310,7 @@ float system_convert_axis_steps_to_mpos(int32_t *steps, uint8_t idx)
 void system_convert_array_steps_to_mpos(float *position, int32_t *steps)
 {
   uint8_t idx;
-  for (idx=0; idx<N_AXIS; idx++) {
+  for (idx=0; idx<N_AXIS; idx++) { // ignore z-axis as has no limit switches
     position[idx] = system_convert_axis_steps_to_mpos(steps, idx);
   }
   return;
